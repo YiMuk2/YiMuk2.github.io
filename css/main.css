@@ -1,0 +1,134 @@
+@font-face {
+    font-family : 'NanumSquare';
+    src: url(../font/NanumSquareR.woff);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'NanumSquare';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    width: 100%;
+    padding: 30px;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+}
+
+.nav-img {
+    width: 75px;
+    
+}
+.nav-title {
+    flex-grow: 2;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    
+}
+.menu-text {
+    font-size: 10px;
+    padding: 15px;
+    font-weight: bold;
+}
+.nav-menu .menu-box {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #000;
+    padding: 25px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+}
+
+.line-two {
+    width: 50%;
+}
+
+.content-wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-item {
+    position: relative;
+    width: 50%;
+}
+.content-item:before {
+    content: "";
+    display:block;
+    padding-top: 100%;
+}
+
+.item-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.item-inner:hover .overlay{
+    opacity: 1;
+}
+
+.item-inner .item-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.item-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    margin-top: 135px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,255,0.8);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.sub-title {
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
